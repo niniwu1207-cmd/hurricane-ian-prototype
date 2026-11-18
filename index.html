@@ -96,13 +96,15 @@
                 defined a consistent geographic region covering the storm and southwest Florida. We processed infrared
                 brightness-temperature observations and created static satellite maps for three points in time. We also
                 explored temperature thresholds and changes in cold-cloud area, and this prototype turns the three maps
-                into a working interactive comparison.</p>
+                into a working interactive comparison. We also computed hourly cold-cloud area for all 25 scans and
+                plotted it with D3, linking the chart's marker to the slider.</p>
             <h3>What will be the most challenging part of the project to design, and why?</h3>
             <p>One challenge will be making changes across time easy to compare without overwhelming viewers. Satellite
                 images contain a lot of visual detail, so we need clear labels and a consistent color scale. Another
                 challenge will be connecting the satellite images to a cold-cloud area line chart so that both views
                 show the same selected time. We will also need to explain brightness temperature and threshold choices
-                in simple terms so viewers can interpret the patterns correctly.</p>
+                in simple terms so viewers can interpret the patterns correctly. Finally, we need to decide how many time
+                steps to show, since more frames give a smoother story but make the page heavier to load.</p>
         </section>
         <footer>Data: <a href="https://registry.opendata.aws/noaa-goes/" target="_blank" rel="noopener noreferrer">NOAA
                 GOES Open Data Registry</a> · GOES-16 ABI Band 13</footer>
